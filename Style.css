@@ -1,4 +1,8 @@
-body { background-color: saddlebrown;} /** importante sempre deixar as tags que vem primeiro no html, aqui tambem em primeiro questao de semantica e organizacao**/
+/** body { background-color: saddlebrown;}  importante sempre deixar as tags que vem primeiro no html, aqui tambem em primeiro questao de semantica e organizacao**/
+.principal {background-color: orange;
+            padding: 20px;
+}
+
 h1 { text-align: center;
      border-radius: 10px;
      border-style: solid;
@@ -16,3 +20,28 @@ h1 { text-align: center;
 P { text-align: center;}
 em strong {color: tomato;} /** veja que aqui estamos especificando a alteração apenas no Strong seguido no EM, desta maneira estamos especializando em cascata **/ 
 #missao { font-size: 22px; } /** exemplo referenciado via id **/
+
+.beneficios{ background-color: pink; 
+             padding: 18px;       
+}
+
+h2{ text-align: center ; padding: 5px;}
+
+ul{
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    line-height: 80px;
+}
+
+.item { font-style: italic;} /** importante referenciar com o . ao inves do # **/
+
+#beneficios_foto {
+
+    width: 40%;
+    padding: 10px;
+    border-style: solid;
+    border-color: saddlebrown;
+    border-radius: 80px;
+    
+}
