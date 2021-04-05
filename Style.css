@@ -3,7 +3,9 @@
             padding: 20px;
 }
 
-h1 { text-align: center;
+.titulo-principal { padding-left: 20px;}
+
+.titulo-centralizado { text-align: center;
      border-radius: 10px;
      border-style: solid;
      border-color: firebrick;   
@@ -25,7 +27,6 @@ em strong {color: tomato;} /** veja que aqui estamos especificando a alteração
              padding: 18px;       
 }
 
-h2{ text-align: center ; padding: 5px;}
 
 ul{
     display: inline-block;
