@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=stylesheet href="reset.css"> 
+    <link rel=stylesheet href="reset.css">
     <link rel=stylesheet href="produtos.css">
     <title>Produtos - Diego´s Barber Shop</title>
 </head>
+
 <body>
-    <header> 
+    <!-- a tag header é uma maneira semantica de informar ao navegador que estes elementos sao um cabeçalho-->
+    <header>
         <div class="menuheader">
-            <h1> <img id="logo" src="logo.jpg" width="150px" height="200px" > </h1>
-
-
+            <h1> <img id="logo" src="logo.jpg" width="200px" height="250px"> </h1>
             <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="http://www.google.com">Contato</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="http://www.google.com">Contato</a></li>
+                </ul>
             </nav>
         </div>
-
     </header>
-    
+
+    <!--a tag main é uma maneira semantica de informar dentro do body que este conteudo é o mais importante -->
+    <main>
+        <ul class="produtos">
+            <li>
+                <h2>Cabelo</h2>
+                <img src="cabelo2.png" width="100px" height="100px">
+                <p class="descricao-produto"> Não manjamos nada, mas estamos começando e somos bem intencionados</p>
+                <p class="descricao-preco">R$10,99</p>
+            </li>
+            <li>
+                <h2>Barba</h2>
+                <img src="barba.jpg" width="100px" height="100px">
+                <p class="descricao-produto">Adoramos tentar fazer a barba dos outros, promessa de vergonha garantida</p>
+                <p class="descricao-preco">R$8,99</p>
+            </li>
+            <li>
+                <h2>Cabelo + Barba</h2>
+                <img src="barbacabelo.jpg" width="110px" height="100px">
+                <p class="descricao-produto">Meter o louco é nossa cara, vamos piorar sua auto estima</p>
+                <p class="descricao-preco">R$16,64</p>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <img src="logo-branco.png">
+        <p class="copyright">&copy;Copyright Diego Barber Shop 2021</p>
 
 
-
-
+    </footer>
 
 </body>
+
 </html>
