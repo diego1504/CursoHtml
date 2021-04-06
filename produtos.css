@@ -24,7 +24,7 @@ nav ul{
     /**
       position static: Elemento será renderizado imediatamente apos o o final do elemento anterior, sempre da esquerda -> direita
       position absolute: Tera um ponto de referencia absoluto em relação a pagina, portanto nao respeita mais divs ou encamento rednerizado como sefosse um statu
-      position relative: **/
+      position relative: comente teste**/
 
 
     position: absolute;
