@@ -1,48 +1,75 @@
 /** body { background-color: saddlebrown;}  importante sempre deixar as tags que vem primeiro no html, aqui tambem em primeiro questao de semantica e organizacao**/
-.principal {background-color: orange;
-            padding: 20px;
+
+.titulo-principal {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
 }
 
-.titulo-principal { padding-left: 20px;}
-
-.titulo-centralizado { text-align: center;
-     border-radius: 10px;
-     border-style: solid;
-     border-color: firebrick;   
-
+.principal {
+    background-color: orange;
+    padding: 20px;
 }
-#banner { 
-    
-    width: 1300px; 
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: firebrick;
+}
+
+#banner {
+    width: 1500px;
     height: 300px;
     padding-inline: 10px;
     margin-inline: 10px;
-}                 
+}
 
-P { text-align: center;}
-em strong {color: tomato;} /** veja que aqui estamos especificando a alteração apenas no Strong seguido no EM, desta maneira estamos especializando em cascata **/ 
-#missao { font-size: 22px; } /** exemplo referenciado via id **/
+P {
+    text-align: center;
+}
 
-.beneficios{ background-color: pink; 
-             padding: 18px;       
+em strong {
+    color: tomato;
 }
 
 
-ul{
+/** veja que aqui estamos especificando a alteração apenas no Strong seguido no EM, desta maneira estamos especializando em cascata **/
+
+#missao {
+    font-size: 22px;
+}
+
+
+/** exemplo referenciado via id **/
+
+.beneficios {
+    background-color: pink;
+    padding: 18px;
+}
+
+ul {
     display: inline-block;
     width: 500px;
     vertical-align: top;
     line-height: 80px;
 }
 
-.item { font-style: italic;} /** importante referenciar com o . ao inves do # **/
+.item {
+    font-style: italic;
+}
+
+
+/** importante referenciar com o . ao inves do # **/
 
 #beneficios_foto {
-
     width: 40%;
     padding: 10px;
     border-style: solid;
     border-color: saddlebrown;
     border-radius: 80px;
-    
 }
