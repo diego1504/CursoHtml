@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="reset.css">
+    <link rel=stylesheet href="style.css">
+    <title>Contatos - Diego´s Barber Shop</title>
+</head>
+
+<body>
+    <!-- a tag header é uma maneira semantica de informar ao navegador que estes elementos sao um cabeçalho-->
+    <header>
+        <div class="menuheader">
+            <h1> <img id="logo" src="logo.jpg" width="200px" height="250px" alt="Logo da Barbearia Diego"> </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="http://www.google.com">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nome">Nome e Sobrenome</label>
+            <input type="text" name="Nome e Sobrenome" id="nome" placeholder="Coloque seu nome poha" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="emaia na caraia" class="input-padrao" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="seu zap" class="input-padrao">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="30" rows="10" id="mensagem" placeholder="Texto..." class="input-padrao"></textarea>
+
+            <div>
+                <p>Como você prefere que falamos com você?</p>
+                <label for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email">Email</label>
+
+                <!--indicador name faz com que todos os radios fiquem no mesmo grupo, ou seja, clica em um desmarca os outros-->
+                <label for="radio-tel"><input type="radio" name="contato" value="Telefone" id="radio-tel">Email</label>
+
+                <label for="radio-whatssup"><input type="radio" name="contato" value="Whatssup" id="radio-whatssup">Whatssup</label>
+
+            </div>
+
+            <fieldset>
+                <!--semanticamente faz mais sentido que o DIV neste contexto-->
+                <legend> Qual horario vc prefere ser atendido</legend>
+                <!--no lugar de paragrafo devemos por legend quando temos field set -->
+                <select>
+                    <option>Manha</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox"> de receber nossas ofertas por email?</label>
+
+            <input type="submit" value="Enviar" class="enviar">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>08h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>12h~16h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </form>
+
+    </main>
+
+
+
+    <footer>
+        <img src="logo-branco.png" alt="Logo da Barbearia Diego">
+        <p class="copyright">&copy;Copyright Diego Barber Shop 2021</p>
+
+
+    </footer>
+
+</body>
+
+</html>

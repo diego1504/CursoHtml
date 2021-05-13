@@ -1,75 +1,178 @@
-/** body { background-color: saddlebrown;}  importante sempre deixar as tags que vem primeiro no html, aqui tambem em primeiro questao de semantica e organizacao**/
+header {
+    background-color: gray;
+    padding: 20px 0;
+}
 
-.titulo-principal {
+.menuheader {
+    /** importante sempre termos um tamanho para a div que vai evelopar todos **/
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul {
+    /**
+      position static: Elemento será renderizado imediatamente apos o o final do elemento anterior, sempre da esquerda -> direita
+      position absolute: Tera um ponto de referencia absoluto em relação a pagina, portanto nao respeita mais divs ou encamento rednerizado como sefosse um statu
+      position relative: comente teste**/
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+
+/** comando hover faz com que tenhamos alteracoes quando o mouse passa por cima **/
+
+nav a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+h2 {
     font-size: larger;
     font-weight: bolder;
-    text-align: center;
+    ;
 }
 
-.principal {
-    background-color: orange;
-    padding: 20px;
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.titulo-principal {
-    padding-left: 20px;
-}
-
-.titulo-centralizado {
-    text-align: center;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: firebrick;
-}
-
-#banner {
-    width: 1500px;
-    height: 300px;
-    padding-inline: 10px;
-    margin-inline: 10px;
-}
-
-P {
-    text-align: center;
-}
-
-em strong {
-    color: tomato;
-}
-
-
-/** veja que aqui estamos especificando a alteração apenas no Strong seguido no EM, desta maneira estamos especializando em cascata **/
-
-#missao {
-    font-size: 22px;
-}
-
-
-/** exemplo referenciado via id **/
-
-.beneficios {
-    background-color: pink;
-    padding: 18px;
-}
-
-ul {
+.produtos li {
     display: inline-block;
-    width: 500px;
+    /** importante lembrar que devemos usar inline-block quando temos elementos que sofraram defini;áo de tamanho e altura **/
+    text-align: center;
+    width: 30%;
+    /** aqui dizemos que cada elemento dentro da LI (p, img, etc) ira ocupar apenas 30% do espaco da LI em relaçao a tela**/
     vertical-align: top;
-    line-height: 80px;
-}
-
-.item {
-    font-style: italic;
-}
-
-
-/** importante referenciar com o . ao inves do # **/
-
-#beneficios_foto {
-    width: 40%;
-    padding: 10px;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /**faz com que o elemento inteiro respeite o tamanho determinado em width, mesmo com os paddings adicionados**/
+    border-color: black;
+    border-width: 2px;
     border-style: solid;
-    border-color: saddlebrown;
-    border-radius: 80px;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: brown;
+    border-width: 8px;
+}
+
+
+/**exemplo para aumentar elementos dentro do LI, temos que indicar o H2 no hover, caso contrario vai valor apenas a especificacao do H2 declarada **/
+
+.produtos li:hover h2 {
+    font-size: 40px;
+}
+
+
+/**quando temos clique no mouse**/
+
+.produtos li:active {
+    border-color: chartreuse;
+    border-width: 20px;
+}
+
+.descricao-produto {
+    font-size: 16px;
+}
+
+.descricao-preco {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+footer {
+    background: url("bg.jpg");
+    text-align: center;
+    color: blanchedalmond;
+    padding: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: white;
+}
+
+main {
+    width: 940px;
+    max-width: 0 auto;
+    margin: 20px;
+}
+
+form {
+    margin: 40px 0;
+    padding: 20px 0;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+form label {
+    display: block;
+    margin: 1px 0;
+}
+
+.input-padrao {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 0;
+    width: 500px;
+}
+
+.checkbox {
+    margin: 20px;
+}
+
+.horarios {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 5px;
 }
