@@ -7,47 +7,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href="reset.css">
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="style.css ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Diego´s Barber Shop</title>
 
-    <!-- Outra maneira de incluir CSS no header, logo isso cascateia para os outros parametros, ponto negativo que não funciona para multiplas paginas -->
-    <style>
-        P {
-            text-align: center;
-        }
-    </style>
+
 
 </head>
 
 <body>
     <header>
-        <h1 class="titulo-principal">Barbearia Diego´s Barber Shop</h1>
+        <div class="menuheader">
+            <h1> <img id="logo" src="logo.jpg" width="200px" height="250px" alt="Logo da Barbearia Diego"> </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="http://www.google.com">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <img id="banner" src="banner.jpg">
-    <div class="principal">
+    <main>
+        <img class="banner" src="banner.jpg">
+        <section class="principal">
 
-        <h2 class="titulo-centralizado">Sobre a Diego´s Barber Shop</h2>
+            <h2 class="titulo-principal">Sobre a Diego´s Barber Shop</h2>
 
-        <p> Localizada no coração da cidade a Barbearia <strong>Diego´s Barber Shop</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+            <img class="utensilios" src="utensilios.jpg" alt="Foto com utensilios de barbeiros" />
 
-        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+            <p> Localizada no coração da cidade a Barbearia <strong>Diego´s Barber Shop</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada
+                dia.
+            </p>
 
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            <p><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
 
-        <p style="text-align: center;">Deixamos este paragrafo para termos um exemplo de CSS InLine que é uma maneira mais pontual de colocar estilo, apenas para um paragrafo.</p>
-    </div>
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 
-    <div class="beneficios">
-        <h3 class="titulo-centralizado">Muito mais beneficios para você:</h3>
-        <ul>
-            <!--Uso do classe é parecido com o ID, porem com ele podemos generalizar de outras maneiras-->
-            <li class="item">Hora Marcada</li>
-            <li class="item">Melhores Profissionais</li>
-            <li class="item">Free Beer no seu corte </li>
-            <li class="item">Nosso proprio espaço para desgustação de charuto e whiskey </li>
-        </ul>
 
-        <img id="beneficios_foto" src="beneficios.jpg" </div>
+        </section>
+
+        <section class="mapa">
+            <h2 class="titulo-principal">Nosso estabelecimento</h2>
+            <p>Nosso estabelecimento esta bem pertinho da casa do caraleo</p>
+
+            <div class="mapa-conteudo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7353713155367!2d-46.442782885188905!3d-23.542018484692484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce669e6ce6e8e7%3A0xad8cdf1dda74b74c!2sR.%20Em%C3%ADlio%20Serrano%2C%20126%20-%20Conj.%20Res.%20Jos%C3%A9%20Bonif%C3%A1cio%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008253-030!5e0!3m2!1spt-BR!2sbr!4v1621027575143!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+
+        <section class="conteudo-beneficios">
+            <h3 class="titulo-principal">Muito mais beneficios para você:</h3>
+            <ul class="lista-beneficios">
+                <!--Uso do classe é parecido com o ID, porem com ele podemos generalizar de outras maneiras-->
+                <li class="item">Hora Marcada</li>
+                <li class="item">Melhores Profissionais</li>
+                <li class="item">Free Beer no seu corte </li>
+                <li class="item">Nosso proprio espaço para desgustação de charuto e whiskey </li>
+            </ul><img id="beneficios_foto" src="beneficios.jpg" class="imagem-beneficios">
+        </section>
+
+
+    </main>
+    <footer>
+        <img src="logo-branco.png" alt="Logo da Barbearia Diego">
+        <p class="copyright">&copy;Copyright Diego Barber Shop 2021</p>
+
+
+    </footer>
+
+
 </body>
 
 </html>

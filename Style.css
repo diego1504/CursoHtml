@@ -1,11 +1,12 @@
 header {
+    width: 100%;
     background-color: gray;
     padding: 20px 0;
 }
 
 .menuheader {
     /** importante sempre termos um tamanho para a div que vai evelopar todos **/
-    width: 940px;
+    width: 800px;
     position: relative;
     margin: 0 auto;
 }
@@ -111,11 +112,7 @@ footer {
     color: white;
 }
 
-main {
-    width: 940px;
-    max-width: 0 auto;
-    margin: 20px;
-}
+main {}
 
 form {
     margin: 40px 0;
@@ -175,4 +172,97 @@ td,
 th {
     border: 1px solid black;
     padding: 5px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+#beneficios_foto {
+    width: 100%;
+}
+
+.beneficios {
+    padding: 3em 0;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    text-align: left;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal p em {
+    font-style: italic;
+    float: left;
+}
+
+.principal em {
+    font-style: italic;
+    margin: 0 20px 20px 0;
+}
+
+.mapa p {
+    margin: 0 0 10px 0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.item:before {
+    content: "★";
 }
